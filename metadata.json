@@ -1,0 +1,5 @@
+{
+  "name": "FastServices Queue Management",
+  "description": "A modern queue management system allowing users to book appointments with various service offerings from different organizations, featuring a comprehensive admin dashboard.",
+  "requestFramePermissions": []
+}

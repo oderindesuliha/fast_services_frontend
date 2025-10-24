@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastServices - Queue Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Prevent FOUC for dark mode
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
+    "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/",
+    "react-icons/fi": "https://aistudiocdn.com/react-icons@^5.5.0/fi",
+    "qrcode.react": "https://cdn.jsdelivr.net/npm/qrcode.react@3.1.0/dist/qrcode.react.js"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
